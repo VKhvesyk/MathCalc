@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Операції над числами</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <section class="main">
+            <div class="main-wrapper">
+                <p>Операції над числами</p>
+                <form class="main-form">
+                    <label for="main-form__first-number">Перше число:</label>
+                    <input id="main-form__first-number" type="number" placeholder="Введіть числове значення">
+                    <label for="main-form__second-number">Друге число:</label>
+                    <input id="main-form__second-number" type="number" placeholder="Введіть числове значення">
+                    <label for="main-form__operators-selector">Виберіть дію яку необхідно провести над введеними числами:</label>
+                    <select name="operators" class="main-form__operators-selector">
+                        <option value='' disabled selected>Натисніть для вибору дії</option>
+                        <option value="*">'*' - Помножити</option>
+                        <option value="/">'/' - Поділити</option>
+                        <option value="-">'-' - Відняти</option>
+                        <option value="+">'+' - Додати</option>
+                    </select>
+                    <label for="main-form__operation-result">Результат операції:</label>
+                    <input id="main-form__operation-result" disabled type="text" placeholder="Для отримання результату натисніть кнопку нижче">
+                    <button class="main-form__submit">Результат</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
